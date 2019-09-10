@@ -1,0 +1,252 @@
+<style>
+  .caro {
+    background-image: linear-gradient(70deg,
+        rgba(90, 90, 90, 0.1) 10%,
+        rgba(3, 159, 227, 0.1),
+        rgba(78, 175, 8, 0.1),
+        rgba(226, 118, 1, 0.1),
+        rgba(145, 145, 145, 0.1) 90%);
+    display: grid;
+    grid-template-columns: 12.5% 75% 12.5%;
+    align-items: center;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .slides-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .slides {
+    display: flex;
+    justify-content: center;
+    flex-grow: inherit;
+    min-width: 100%;
+    max-width: 960px;
+    transition: transform 0.5s linear;
+  }
+
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 960px;
+    margin: 70px 10px;
+    padding: 40px;
+    height: 385px;
+
+  }
+
+  .testimonial-container p:first-child {
+    overflow: auto;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex-basis: inherit;
+
+    justify-content: space-between;
+    margin: 5px 20px;
+    width: 100%;
+  }
+
+  .prev {
+    justify-self: flex-end;
+    opacity: 0.5;
+  }
+
+  .next {
+    justify-self: flex-start;
+    opacity: 0.5;
+  }
+
+  .slides img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px;
+    align-self: center;
+    opacity: 1;
+  }
+
+  .text-container h5 {
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .testimonial-position {
+    font-size: 20px;
+  }
+
+  @media(max-width: 992px) {
+    .slides img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    .testimonial-container {
+      flex-direction: column;
+      height: 100%;
+      margin: 10px;
+    }
+
+    .text-container {
+      margin: 0;
+    }
+  }
+
+  @media(min-width: 1500px) {
+    .caro {
+      grid-template-columns: 20% 60% 20%;
+    }
+  }
+</style>
+
+<div class="caro">
+  <a class="prev" onclick="plusIndex(-1)"><img src="images/left.svg" /></a>
+  <div class="slideshow-container">
+    <div id="conatinerID" class="slides-container">
+      <div class="slides carousel fade">
+        <div class="testimonial-container">
+          <img src="img/a-2.jpg" alt="Andreas-Pfister" />
+          <div class="text-container">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptas ex accusamus facere reprehenderit at iure, dignissimos quaerat animi quae ipsum repellat laborum? Quos enim magni officia sequi veritatis odio?
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dicta veniam adipisci cum hic inventore nostrum, qui quis ex. Suscipit rerum omnis sapiente tempore vero, reiciendis ducimus atque corporis unde.
+            </p>
+            <br />
+            <div>
+              <h5>Salvador Dali</h5>
+              <p class="testimonial-position">Founder of All Around Art</p>
+              <p>Spain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slides carousel">
+        <div class="testimonial-container">
+          <img src="img/aaiconfinder_ninja-background_479477 (1).png" alt="va-timurova-proup" />
+          <div class="text-container">
+            <p>
+              blabla is the best thing that could happened to us. <br /> jldsajjg
+              jndaslad
+              njkdanjkasdnadnmgdk jdajm
+            </p>
+            <br />
+            <div>
+              <h5>Alina Bossaq</h5>
+              <p class="testimonial-position">Paerdo Ent.</p>
+              <p>Czech Republic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" slides carousel">
+        <div class="testimonial-container">
+          <img src="img/circle.png" alt="Ruben" />
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, voluptatum voluptate dignissimos illum, quae aut ut fugit sed voluptas, corporis repellendus accusantium laboriosam labore non nostrum tempore suscipit provident? Quos.
+            </p>
+            <br />
+            <div>
+              <h5>Rubens</h5>
+              <p class="testimonial-position">Managing Director at Painting Gallery</p>
+              <p>France</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slides carousel">
+        <div class="testimonial-container">
+          <img src="img/painter-palette.png" alt="Enrico" />
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas a eligendi fugit eos nostrum impedit necessitatibus hic perspiciatis commodi nisi blanditiis veniam, ullam non doloribus optio quae ratione accusamus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur provident incidunt illo obcaecati temporibus, harum fugit ex eveniet atque assumenda dignissimos id praesentium laboriosam aut voluptates, pariatur reiciendis cum eum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam adipisci, nihil possimus tempore natus, illum alias laboriosam repudiandae voluptatem cupiditate, suscipit nostrum enim repellat rerum cumque dicta consequatur? Ipsam!
+            </p>
+            <br />
+            <div>
+              <h5>Georgio Aramini</h5>
+              <p class="testimonial-position">President of Blabla</p>
+              <p>Italy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slides carousel">
+        <div class="testimonial-container">
+          <img src="img/aaiconfinder_ninja-background_479477 (1).png" alt="Andre" />
+          <div class="text-container">
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint in facilis? Nulla officia itaque ex eligendi, consequatur labore dolorum voluptate quidem, rerum recusandae, amet possimus fugit officiis facilis libero?
+            </p>
+            <br />
+            <div>
+              <h5>John Doe</h5>
+              <p class="testimonial-position">CEO of Doex</p>
+              <p>Romania</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <a class="next" onclick="plusIndex(+1)"><img src="images/right.svg" /></a>
+</div>
+<script type="text/javascript">
+  var slideIndex = 1;
+
+  showImage(slideIndex);
+  function showImage(n) {
+    var slide = document.getElementsByClassName("slides");
+    var slideParagraph = document.getElementsByClassName("text-container");
+
+    if (n > slide.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slide.length;
+    }
+    for (var i = 0; i < slide.length; i++) {
+      slide[i].style.display = "none";
+    }
+
+
+    slide[slideIndex - 1].style.display = "flex";
+  }
+
+  var numbers = new Carousel()
+
+  function Carousel(containerID) {
+    this.container = document.getElementById(conatinerID);
+    this.slides = this.container.querySelectorAll('.carousel');
+    this.total = this.slides.length - 1;
+    this.current = 0;
+
+    //start on slide 1
+    this.slide(this.current)
+  }
+
+  function plusIndex(n) {
+    showImage((slideIndex += n));
+  }
+
+  function currentSlide(n) {
+    showImage((slideIndex = n));
+  }
+</script>

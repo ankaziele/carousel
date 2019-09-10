@@ -1,0 +1,26 @@
+
+.carousel-container {
+    width: 300%;
+    margin: auto;
+}
+
+.carousel-slide {
+    display: flex;
+    /* width: 90% */
+}
+
+.testimonial {
+    display: flex;
+    border: 1px solid;
+    width: 100%;
+    margin: 50px;
+}
+
+.testimonial img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    border: 50%;
+    margin: 10px;
+}
